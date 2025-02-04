@@ -1,0 +1,27 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        namespace: @nacos.namespace@
+        group: @environment@
+      server-addr: @nacos.server-addr@
+      username: @nacos.username@
+      password: @nacos.password@
+    sentinel:
+      eager: true
+      transport:
+        dashboard:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: @nacos.server-addr@
+            username: @nacos.username@
+            password: @nacos.password@
+            rule-type: gw_flow
+            data-type: json
