@@ -1,0 +1,32 @@
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Build output
+bin/
+obj/
+dist/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency folders
+node_modules/
+vendor/
+
+# Environment files
+.env
+*.env.local
+
+# OS generated files
+Thumbs.db
+.DS_Store
